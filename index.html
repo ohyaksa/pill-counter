@@ -1,0 +1,1925 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwNTkyNDk5Nzg0Mzk5NDA1ODQ1NSIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2JkYTVlZWQwMzBkYTIyMGRfYTk3Y2JhNTZfcGhhcm1hY3lfcGlsbF9jb3VudGVyLmh0bWwtNjkxIn0sImV4cCI6MTc5MjMxOTYzNywiaWF0IjoxNzkyMzE2MDM3LCJhbGciOiJSUzI1NiJ9.boa2WolHgOT3Yd849j0Mw1o7s__56_Ln9prSZDzC9Xs5-6D-20HExZ8tBRffuAVbw4WM6yUaiI-kSHzRlcTJ4I8Cd1PgqtOA2iqTdc912rEZ3clOk6XeXd4S2x88sEjr4YWShdfxBWxaisTa89u6kRS8ywZVZswEN-0cIAzy-ppIIjo-AqXadrOINaR2EV-9pPGLFZpCKmN5WNLeFRv18Xks6liMVEzRl-oWNJmegItvgw3OU8KCbaWOi3rP-pV5IpDc500esvZRzY-OyF6OyTK-glowZSmwOEQLEjwzwRA7rkXkh9-vZaJyUAWedGPPwEEnUKBWSd3YlDC146y9tg","c_bda5eed030da220d_a97cba56_pharmacy_pill_counter.html-691")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var c=n;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&b!=null&&h(c,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(d){return a.next(d)}function c(d){return a.throw(d)}return new Promise(function(d,e){function f(g){g.done?d(g.value):Promise.resolve(g.value).then(b,c).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var c=[],d;for(d in b)Object.prototype.hasOwnProperty.call(b,d)&&c.push(b[d]);return c}});p("Array.prototype.includes",function(a){return a?a:function(b,c){var d=this;d instanceof String&&(d=String(d));var e=d.length;c=c||0;for(c<0&&(c=Math.max(c+e,0));c<e;c++){var f=d[c];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){var c=a.style;b.backgroundColor&&(c.backgroundColor=b.backgroundColor);b.width&&(c.width=`${b.width}px`);b.height&&(c.height=`${b.height}px`);var d=b.style;d!=null&&Object.keys(d).forEach(e=>{c[e]=d[e]})};var v=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let c=0,d=a.length;c<d;c++)b.push(a[c]);return b}let x=null;function y(a={}){return x?x:a.u?x=a.u:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var c;if(!(c=b.width)){c=z(a,"border-left-width");var d=z(a,"border-right-width");c=a.clientWidth+c+d}(b=b.height)||(b=z(a,"border-top-width"),d=z(a,"border-bottom-width"),b=a.clientHeight+b+d);return{width:c,height:b}}function B(a){return new Promise((b,c)=>{var d=new Image;d.onload=()=>{d.decode().then(()=>{requestAnimationFrame(()=>b(d))})};d.onerror=c;d.crossOrigin="anonymous";d.decoding="async";d.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,c){return t(function*(){var d=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");d.setAttribute("width",`${b}`);d.setAttribute("height",`${c}`);d.setAttribute("viewBox",`0 0 ${b} ${c}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");d.appendChild(e);e.appendChild(a);return C(d)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(c=>{var d=a.getPropertyValue(c),e=a.getPropertyPriority(c);return`${c}: ${d}${e?" !important":""};`}).join(" ")}
+function G(a,b,c,d){a=window.getComputedStyle(a,c);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;c=`.${f}:${c}`;a.cssText?(d=a.getPropertyValue("content"),d=`${a.cssText} content: '${d.replace(/'|"/g,"")}';`):d=F(a,d);g.call(e,document.createTextNode(`${c}{${d}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,c){return t(function*(){var d=yield fetch(a,b);if(d.status===404)throw Error(`Resource "${d.url}" not found`);var e=yield d.blob();return new Promise((f,g)=>{var k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(c({v:d,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function aa(a,b,c){var d=a.replace(/\?.*/,"");c&&(d=a);/ttf|otf|eot|woff2?/i.test(d)&&(d=d.replace(/.*\//,""));return b?`[${b}]${d}`:d}
+function K(a,b,c){return t(function*(){var d=aa(a,b,c.F);if(J[d]!=null)return J[d];c.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield I(a,c.l,({v:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=c.o||""}return J[d]=e})};const L={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function M(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function ba(a){return t(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function ca(a,b){return t(function*(){if(a.currentSrc){var c=document.createElement("canvas");let d=c.getContext("2d");c.width=a.clientWidth;c.height=a.clientHeight;d==null||d.drawImage(a,0,0,c.width,c.height);c=c.toDataURL();return B(c)}c=a.poster;c=yield K(c,L[M(c).toLowerCase()]||"",b);return B(c)})}
+function da(a,b){return t(function*(){try{let c;if(a==null?0:(c=a.contentDocument)==null?0:c.body)return yield N(a.contentDocument.body,b,!0)}catch(c){}return a.cloneNode(!1)})}function ea(a,b){return t(function*(){return E(a,HTMLCanvasElement)?ba(a):E(a,HTMLVideoElement)?ca(a,b):E(a,HTMLIFrameElement)?da(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function fa(a,b,c){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var d=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)d=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))d=w(a.contentDocument.body.childNodes);else{let f;d=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(d.length===0||E(a,HTMLVideoElement))return b;yield d.reduce((e,f)=>e.then(()=>N(f,c)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ha(a,b,c){var d=b.style;if(d){var e=window.getComputedStyle(a);e.cssText?(d.cssText=e.cssText,d.transformOrigin=e.transformOrigin):y(c).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);d.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ia(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(c=>a.value===c.getAttribute("value")))&&b.setAttribute("selected","")}
+function ja(a,b){return t(function*(){var c=a.querySelectorAll?a.querySelectorAll("use"):[];if(c.length===0)return a;var d={};for(var e=0;e<c.length;e++){var f=c[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||d[f]||(d[f]=yield N(g,b,!0))}}c=Object.values(d);if(c.length){d=document.createElementNS("http://www.w3.org/1999/xhtml","svg");d.setAttribute("xmlns","http://www.w3.org/1999/xhtml");d.style.position="absolute";d.style.width="0";d.style.height="0";
+d.style.overflow="hidden";d.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");d.appendChild(e);for(f=0;f<c.length;f++)e.appendChild(c[f]);a.appendChild(d)}return a})}
+function N(a,b,c){return t(function*(){return c||!b.filter||b.filter(a)?Promise.resolve(a).then(d=>ea(d,b)).then(d=>fa(a,d,b)).then(d=>{E(d,Element)&&(ha(a,d,b),G(a,d,":before",b),G(a,d,":after",b),E(a,HTMLTextAreaElement)&&(d.textContent=a.value),E(a,HTMLInputElement)&&d.setAttribute("value",a.value),ia(a,d));return d}).then(d=>ja(d,b)):null})};const O=/url\((['"]?)([^'"]+?)\1\)/g,ka=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,la=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ma(a){var b=[];a.replace(O,(c,d,e)=>{b.push(e);return c});return b.filter(c=>!H(c))}
+function na(a,b,c,d){return t(function*(){try{let e=c?(new URL(b,c||void 0)).toString():b,f;f=yield K(e,L[M(b).toLowerCase()]||"",d);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function oa(a,{K:b}){return b?a.replace(la,c=>{for(;;){let [d,,e]=ka.exec(c)||[];if(!e)return"";if(e===b)return`src: ${d};`}}):a}
+function P(a,b,c){return t(function*(){if(a.search(O)===-1)return a;var d=oa(a,c);return ma(d).reduce((e,f)=>e.then(g=>na(g,f,b,c)),Promise.resolve(d))})};function Q(a,b,c){return t(function*(){var d,e=(d=b.style)==null?void 0:d.getPropertyValue(a);return e?(d=yield P(e,null,c),b.style.setProperty(a,d,b.style.getPropertyPriority(a)),!0):!1})}function pa(a,b){return t(function*(){(yield Q("background",a,b))||(yield Q("background-image",a,b));(yield Q("mask",a,b))||(yield Q("-webkit-mask",a,b))||(yield Q("mask-image",a,b))||(yield Q("-webkit-mask-image",a,b))})}
+function qa(a,b){return t(function*(){var c=E(a,HTMLImageElement);if(c&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var d=c?a.src:a.href.baseVal,e=yield K(d,L[M(d).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...k)=>{try{f(b.h(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");c?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function ra(a,b){return t(function*(){var c=w(a.childNodes).map(d=>R(d,b));yield Promise.all(c).then(()=>a)})}function R(a,b){return t(function*(){E(a,Element)&&(yield pa(a,b),yield qa(a,b),yield ra(a,b))})};const S={};function T(a){return t(function*(){var b=S[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return S[a]=b})}function U(a,b){return t(function*(){var c=a.cssText,d=/url\(["']?([^"')]+)["']?\)/g,e=(c.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){var g=f.replace(d,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.l,({result:k})=>{c=c.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>c)})}
+function V(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var c=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var d=c.exec(a);if(d===null)break;b.push(d[0])}a=a.replace(c,"");c=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(d=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=c.exec(a);if(e===null)if(e=d.exec(a),e===null)break;else c.lastIndex=d.lastIndex;else d.lastIndex=
+c.lastIndex;b.push(e[0])}return b}
+function sa(a,b){return t(function*(){var c=[],d=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=T(f.href).then(m=>U(m,b)).then(m=>V(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Fa){}})).catch(()=>{});d.push(f)}})}catch(f){let g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&d.push(T(e.href).then(k=>U(k,b)).then(k=>V(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(d).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{c.push(f)})}catch(f){}});return c})})}function ta(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(O)!==-1)}function ua(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var c=w(a.ownerDocument.styleSheets);c=yield sa(c,b);return ta(c)})}
+function va(a){function b(d){(d.style.fontFamily||getComputedStyle(d).fontFamily).split(",").forEach(e=>{c.add(e.trim().replace(/["']/g,""))});Array.from(d.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var c=new Set;b(a);return c}function wa(a,b){return t(function*(){var c=yield ua(a,b),d=va(a);return(yield Promise.all(c.filter(e=>d.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>P(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function xa(a,b){return t(function*(){var c=b.m!=null?b.m:b.A?null:yield wa(a,b);if(c){let d=document.createElement("style");d.appendChild(document.createTextNode(c));a.firstChild?a.insertBefore(d,a.firstChild):a.appendChild(d)}})};function ya(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield N(a,b,!0);yield xa(e,b);yield R(e,b);u(e,b);return yield D(e,c,d)})}
+function za(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield ya(a,b);e=yield B(e);var f=document.createElement("canvas"),g=f.getContext("2d"),k=b.I||window.devicePixelRatio||1,m=b.j||c,q=b.i||d;f.width=m*k;f.height=q*k;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Aa(a,b={}){return t(function*(){return(yield za(a,b)).toDataURL()})};const Ba=["gemini.google.com","corp.google.com","proxy.googlers.com"];function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var c=document.createElement("canvas");c.width=a;c.height=b;return c.toDataURL("image/png")}const Y=X(1,1);
+function Z(a){return t(function*(){try{return yield Aa(a,{j:a.offsetWidth,i:a.offsetHeight,A:!0,filter:b=>{if(b.tagName==="IMG"){let c=b.getAttribute("src");if(!c||c.trim()===""||b.style.display==="none")return!1}return!0},o:Y,h:()=>Y})}catch(b){return X(a.offsetWidth,a.offsetHeight)}})}
+function Ca(){return t(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,c=document.body.cloneNode(!0);c.querySelectorAll('[class*="animate"]').forEach(d=>{d.classList.remove(...Array.from(d.classList).filter(e=>e.startsWith("animate")))});c.style.width=`${a}px`;c.style.height=`${b}px`;return c})}
+function Da(a){return t(function*(){var b=document.body;if(W()){var c=yield Ca();b=c;document.body.appendChild(c)}c=yield Z(b);W()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:c,topOffset:document.documentElement.scrollTop},a.origin)})}function Ea(a){return t(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(Ba.some(c=>a.origin.includes(c))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Da(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ea(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.j=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.i="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PharmCount Pro — 약국 스마트 알약 계수기 (정제·캡슐·반알)</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Malgun Gothic', '맑은 고딕', sans-serif;
+      background-color: #f1f5f9;
+      color: #0f172a;
+      user-select: none;
+    }
+    .canvas-wrapper {
+      position: relative;
+      width: 100%;
+      background: #0f172a;
+      border-radius: 0.75rem;
+      overflow: hidden;
+    }
+    canvas#trayCanvas {
+      display: block;
+      width: 100%;
+      height: auto;
+      cursor: crosshair;
+      touch-action: none;
+    }
+    .tap-card:active {
+      transform: scale(0.98);
+    }
+    .code- area-selectable {
+      user-select: text;
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.sticky{position:sticky}.inset-0{inset:0px}.bottom-5{bottom:1.25rem}.right-5{right:1.25rem}.top-0{top:0px}.z-30{z-index:30}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-4{margin-bottom:1rem}.mr-1{margin-right:0.25rem}.mt-1{margin-top:0.25rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-2\.5{height:0.625rem}.h-6{height:1.5rem}.h-full{height:100%}.max-h-\[520px\]{max-height:520px}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-2\.5{width:0.625rem}.w-24{width:6rem}.w-28{width:7rem}.w-6{width:1.5rem}.w-full{width:100%}.max-w-7xl{max-width:80rem}.max-w-lg{max-width:32rem}.flex-1{flex:1 1 0%}.border-collapse{border-collapse:collapse}.cursor-pointer{cursor:pointer}.list-decimal{list-style-type:decimal}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-100 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(241 245 249 / var(--tw-divide-opacity, 1))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.whitespace-pre{white-space:pre}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-t{border-top-width:1px}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-amber-300{--tw-border-opacity:1;border-color:rgb(252 211 77 / var(--tw-border-opacity, 1))}.border-blue-100{--tw-border-opacity:1;border-color:rgb(219 234 254 / var(--tw-border-opacity, 1))}.border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.border-emerald-100{--tw-border-opacity:1;border-color:rgb(209 250 229 / var(--tw-border-opacity, 1))}.border-emerald-200{--tw-border-opacity:1;border-color:rgb(167 243 208 / var(--tw-border-opacity, 1))}.border-emerald-500\/30{border-color:rgb(16 185 129 / 0.3)}.border-purple-200{--tw-border-opacity:1;border-color:rgb(233 213 255 / var(--tw-border-opacity, 1))}.border-rose-200{--tw-border-opacity:1;border-color:rgb(254 205 211 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-200\/80{border-color:rgb(226 232 240 / 0.8)}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-amber-200{--tw-bg-opacity:1;background-color:rgb(253 230 138 / var(--tw-bg-opacity, 1))}.bg-amber-50\/50{background-color:rgb(255 251 235 / 0.5)}.bg-amber-50\/70{background-color:rgb(255 251 235 / 0.7)}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-blue-50\/40{background-color:rgb(239 246 255 / 0.4)}.bg-blue-50\/60{background-color:rgb(239 246 255 / 0.6)}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-emerald-50\/40{background-color:rgb(236 253 245 / 0.4)}.bg-emerald-50\/60{background-color:rgb(236 253 245 / 0.6)}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/20{background-color:rgb(16 185 129 / 0.2)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}.bg-purple-50\/40{background-color:rgb(250 245 255 / 0.4)}.bg-purple-50\/70{background-color:rgb(250 245 255 / 0.7)}.bg-purple-500{--tw-bg-opacity:1;background-color:rgb(168 85 247 / var(--tw-bg-opacity, 1))}.bg-purple-600{--tw-bg-opacity:1;background-color:rgb(147 51 234 / var(--tw-bg-opacity, 1))}.bg-rose-50{--tw-bg-opacity:1;background-color:rgb(255 241 242 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-700{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/60{background-color:rgb(15 23 42 / 0.6)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-1{padding:0.25rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-3{padding-bottom:0.75rem}.pl-5{padding-left:1.25rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-0.025em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-amber-900{--tw-text-opacity:1;color:rgb(120 53 15 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-blue-800{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.text-blue-900{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.text-emerald-100{--tw-text-opacity:1;color:rgb(209 250 229 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-emerald-900{--tw-text-opacity:1;color:rgb(6 78 59 / var(--tw-text-opacity, 1))}.text-purple-700{--tw-text-opacity:1;color:rgb(126 34 206 / var(--tw-text-opacity, 1))}.text-purple-800{--tw-text-opacity:1;color:rgb(107 33 168 / var(--tw-text-opacity, 1))}.text-purple-900{--tw-text-opacity:1;color:rgb(88 28 135 / var(--tw-text-opacity, 1))}.text-rose-700{--tw-text-opacity:1;color:rgb(190 18 60 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.accent-blue-600{accent-color:#2563eb}.accent-emerald-600{accent-color:#059669}.opacity-80{opacity:0.8}.opacity-90{opacity:0.9}.opacity-95{opacity:0.95}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:bg-amber-100:hover{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-200:hover{--tw-bg-opacity:1;background-color:rgb(253 230 138 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-400:hover{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-100:hover{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-200:hover{--tw-bg-opacity:1;background-color:rgb(191 219 254 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-500:hover{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-100:hover{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-200:hover{--tw-bg-opacity:1;background-color:rgb(167 243 208 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-500:hover{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity, 1))}.hover\:bg-purple-100:hover{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}.hover\:bg-purple-200:hover{--tw-bg-opacity:1;background-color:rgb(233 213 255 / var(--tw-bg-opacity, 1))}.hover\:bg-purple-500:hover{--tw-bg-opacity:1;background-color:rgb(168 85 247 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-100:hover{--tw-bg-opacity:1;background-color:rgb(255 228 230 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.hover\:text-slate-700:hover{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-emerald-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(16 185 129 / var(--tw-ring-opacity, 1))}@media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 1024px){.lg\:col-span-4{grid-column:span 4 / span 4}.lg\:col-span-8{grid-column:span 8 / span 8}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:grid-cols-6{grid-template-columns:repeat(6, minmax(0, 1fr))}}</style></head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Top Navigation Header -->
+  <header class="bg-slate-900 text-white shadow-md sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center shadow-inner">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6.5a4.5 4.5 0 016.364 0l.636.636a4.5 4.5 0 010 6.364l-7 7a4.5 4.5 0 01-6.364 0l-.636-.636a4.5 4.5 0 010-6.364l7-7z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.5 8.5l7 7"></path>
+          </svg>
+        </div>
+        <div>
+          <h1 class="text-lg sm:text-xl font-bold tracking-tight flex items-center gap-2">
+            PharmCount Pro
+            <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">약국 조제 검수용</span>
+          </h1>
+          <p class="text-xs text-slate-400">정제 · 캡슐 · 반알(0.5정) 이미지 판독 및 처방 수량 계수기</p>
+        </div>
+      </div>
+
+      <!-- Mode Switcher Tabs -->
+      <nav class="flex flex-wrap items-center bg-slate-800 p-1 rounded-xl gap-1">
+        <button id="tabBtnTray" type="button" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition bg-emerald-500 text-white shadow flex items-center gap-1.5">
+          📸 사진·트레이 계수
+        </button>
+        <button id="tabBtnTap" type="button" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition text-slate-300 hover:text-white flex items-center gap-1.5">
+          ⚡ 터치·처방 계산기
+        </button>
+        <button id="tabBtnLog" type="button" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition text-slate-300 hover:text-white flex items-center gap-1.5">
+          📋 계수 기록
+          <span id="logBadge" class="px-1.5 py-0.2 rounded-full text-[11px] bg-slate-700 text-slate-200">0</span>
+        </button>
+        <button id="tabBtnCode" type="button" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition text-amber-300 hover:text-white flex items-center gap-1.5">
+          💻 GitHub 업로드용 코드
+        </button>
+      </nav>
+
+      <!-- Utility Controls -->
+      <div class="flex items-center gap-2">
+        <button id="soundToggleBtn" type="button" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-medium text-slate-200 border border-slate-700 transition flex items-center gap-1.5">
+          <span id="soundIcon">🔊</span> <span id="soundLabel">효과음 켜짐</span>
+        </button>
+        <button id="openGuideBtn" type="button" class="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-xs font-semibold text-white transition">
+          🌐 GitHub 배포 안내
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-5 space-y-5">
+
+    <!-- Top Live Summary Bar (Shared across modes) -->
+    <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-4">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+        <div class="bg-slate-50 rounded-xl p-3 border border-slate-200/80">
+          <div class="flex items-center justify-between text-xs font-medium text-slate-500">
+            <span>원형·장방형 정제</span>
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+          </div>
+          <div class="mt-1 flex items-baseline gap-1">
+            <span id="sumTablet" class="text-2xl font-extrabold text-slate-900">0</span>
+            <span class="text-xs font-semibold text-slate-500">정</span>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 rounded-xl p-3 border border-slate-200/80">
+          <div class="flex items-center justify-between text-xs font-medium text-slate-500">
+            <span>경질·연질 캡슐</span>
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+          </div>
+          <div class="mt-1 flex items-baseline gap-1">
+            <span id="sumCapsule" class="text-2xl font-extrabold text-slate-900">0</span>
+            <span class="text-xs font-semibold text-slate-500">캡슐</span>
+          </div>
+        </div>
+
+        <div class="bg-amber-50/70 rounded-xl p-3 border border-amber-200">
+          <div class="flex items-center justify-between text-xs font-medium text-amber-800">
+            <span>반알 (분할정 · 0.5)</span>
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+          </div>
+          <div class="mt-1 flex items-baseline gap-1.5">
+            <span id="sumHalf" class="text-2xl font-extrabold text-amber-900">0</span>
+            <span class="text-xs font-semibold text-amber-700">조각 (<span id="sumHalfDose">0.0</span>정)</span>
+          </div>
+        </div>
+
+        <div class="bg-purple-50/70 rounded-xl p-3 border border-purple-200">
+          <div class="flex items-center justify-between text-xs font-medium text-purple-800">
+            <span>기타·특수 제형</span>
+            <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+          </div>
+          <div class="mt-1 flex items-baseline gap-1">
+            <span id="sumOther" class="text-2xl font-extrabold text-purple-900">0</span>
+            <span class="text-xs font-semibold text-purple-700">개</span>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 text-white rounded-xl p-3">
+          <div class="text-xs font-medium text-slate-400">총 물리적 조각 수</div>
+          <div class="mt-1 flex items-baseline gap-1">
+            <span id="sumTotalPieces" class="text-2xl font-extrabold text-white">0</span>
+            <span class="text-xs font-semibold text-slate-300">개 (낱알 합계)</span>
+          </div>
+        </div>
+
+        <div class="bg-emerald-600 text-white rounded-xl p-3 shadow-sm">
+          <div class="text-xs font-medium text-emerald-100">처방 환산 총량 (반알=0.5)</div>
+          <div class="mt-1 flex items-baseline gap-1">
+            <span id="sumTotalDose" class="text-2xl font-extrabold text-white">0</span>
+            <span class="text-xs font-semibold text-emerald-100">정·캡슐</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 1: IMAGE & TRAY COUNTER -->
+    <section id="viewTray" class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+      <!-- Left Column: Interactive Tray Canvas -->
+      <div class="lg:col-span-8 bg-white rounded-2xl shadow-sm border border-slate-200 p-4 flex flex-col gap-4">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+          <div>
+            <h2 class="text-base font-bold text-slate-900">조제 트레이 비전 판독 및 터치 마킹</h2>
+            <p class="text-xs text-slate-500">알약 사진을 업로드하거나 샘플 트레이를 불러온 뒤, 화면을 클릭해 알약을 추가·삭제하세요 (기존 마커 클릭 시 삭제)</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <label for="imageUploadInput" class="cursor-pointer px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold transition inline-flex items-center gap-1.5 shadow-sm">
+              📷 약 사진 업로드/촬영
+              <input id="imageUploadInput" type="file" accept="image/*" capture="environment" class="hidden">
+            </label>
+            <button id="loadSampleBtn" type="button" class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition">
+              🧪 샘플 약국 트레이 생성
+            </button>
+            <button id="autoDetectBtn" type="button" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold transition shadow-sm">
+              ✨ 자동 알약 인식 실행
+            </button>
+          </div>
+        </div>
+
+        <!-- Pill Type Selector Bar for Click Marking -->
+        <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+          <div class="flex flex-wrap items-center gap-1.5">
+            <span class="text-xs font-bold text-slate-600 mr-1">클릭 시 찍힐 종류:</span>
+            <button type="button" data-type="tablet" class="marker-type-btn px-3 py-1.5 rounded-lg text-xs font-bold transition bg-blue-600 text-white shadow-sm flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-white"></span> 정제 (1정)
+            </button>
+            <button type="button" data-type="capsule" class="marker-type-btn px-3 py-1.5 rounded-lg text-xs font-bold transition bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> 캡슐 (1캡슐)
+            </button>
+            <button type="button" data-type="half" class="marker-type-btn px-3 py-1.5 rounded-lg text-xs font-bold transition bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> 반알 (0.5정)
+            </button>
+            <button type="button" data-type="other" class="marker-type-btn px-3 py-1.5 rounded-lg text-xs font-bold transition bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span> 기타 (1개)
+            </button>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button id="undoMarkerBtn" type="button" class="px-2.5 py-1 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 text-xs font-semibold text-slate-700 transition">
+              ↩ 실행 취소
+            </button>
+            <button id="clearMarkersBtn" type="button" class="px-2.5 py-1 rounded-lg bg-rose-50 border border-rose-200 hover:bg-rose-100 text-xs font-semibold text-rose-700 transition">
+              🗑 마커 초기화
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Canvas Area -->
+        <div class="canvas-wrapper border border-slate-300">
+          <canvas id="trayCanvas" width="840" height="520"></canvas>
+        </div>
+
+        <!-- Canvas Controls Footer -->
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-1 text-xs text-slate-600">
+          <div class="flex items-center gap-3">
+            <label for="markerSizeRange" class="font-semibold">마커 크기:</label>
+            <input id="markerSizeRange" type="range" min="12" max="34" value="20" class="w-28 accent-emerald-600">
+            <label class="inline-flex items-center gap-1.5 cursor-pointer font-semibold">
+              <input id="showNumbersCheck" type="checkbox" checked="" class="rounded text-emerald-600">
+              일련번호 표시
+            </label>
+          </div>
+          <div class="flex items-center gap-3">
+            <label for="sensitivityRange" class="font-semibold">자동 인식 민감도:</label>
+            <input id="sensitivityRange" type="range" min="1" max="5" value="3" class="w-24 accent-blue-600">
+            <span id="trayStatusMsg" class="text-emerald-700 font-semibold">샘플 알약이 자동 계수되었습니다.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Prescription Target Verification & Quick Save -->
+      <div class="lg:col-span-4 flex flex-col gap-4">
+        <!-- Prescription Verification Card -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-4 space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="text-sm font-bold text-slate-900">💊 처방전 목표 수량 자동 대조</h3>
+            <span id="matchStatusBadge" class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-slate-100 text-slate-700">대기 중</span>
+          </div>
+
+          <div class="grid grid-cols-3 gap-2">
+            <div>
+              <label for="rxSingleDose" class="block text-[11px] font-semibold text-slate-500 mb-1">1회 투여량 (정)</label>
+              <select id="rxSingleDose" class="w-full rounded-lg border border-slate-300 px-2 py-1.5 text-xs font-bold text-slate-800 bg-white">
+                <option value="0.5">0.5정 (반알)</option>
+                <option value="1" selected="">1정 / 1캡슐</option>
+                <option value="1.5">1.5정 (1정+반알)</option>
+                <option value="2">2정 / 2캡슐</option>
+                <option value="3">3정 / 3캡슐</option>
+              </select>
+            </div>
+            <div>
+              <label for="rxFreqPerDay" class="block text-[11px] font-semibold text-slate-500 mb-1">1일 횟수 (회)</label>
+              <input id="rxFreqPerDay" type="number" min="1" max="10" value="3" class="w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs font-bold text-slate-800">
+            </div>
+            <div>
+              <label for="rxDays" class="block text-[11px] font-semibold text-slate-500 mb-1">투약 일수 (일)</label>
+              <input id="rxDays" type="number" min="1" max="365" value="5" class="w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-xs font-bold text-slate-800">
+            </div>
+          </div>
+
+          <div class="bg-slate-50 rounded-xl p-3 border border-slate-200 space-y-1.5 text-xs">
+            <div class="flex justify-between">
+              <span class="text-slate-500">처방 필요 총량 (환산):</span>
+              <span id="rxTargetDoseText" class="font-extrabold text-slate-900">15 정</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-500">반알 분할 가이드:</span>
+              <span id="rxSplitGuideText" class="font-semibold text-amber-700">반알 분할 불필요 (온전한 15정)</span>
+            </div>
+            <div class="flex justify-between pt-1 border-t border-slate-200">
+              <span class="text-slate-500">현재 계수 대비 오차:</span>
+              <span id="rxDiffText" class="font-extrabold text-blue-600">0 정</span>
+            </div>
+          </div>
+
+          <!-- Progress Bar -->
+          <div class="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
+            <div id="rxProgressBar" class="bg-emerald-500 h-full transition-all duration-300" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- Manual Quick Adjustment Side Panel -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-4 space-y-3">
+          <h3 class="text-sm font-bold text-slate-900">⚡ 제형별 빠른 수량 가감</h3>
+          <div class="space-y-2 text-xs">
+            <div class="flex items-center justify-between p-2 rounded-xl bg-blue-50/60 border border-blue-100">
+              <span class="font-bold text-blue-900">정제 (1정)</span>
+              <div class="flex items-center gap-1">
+                <button type="button" data-adj="tablet:-1" class="quick-adj-btn px-2.5 py-1 rounded bg-white border border-blue-200 font-bold text-blue-800 hover:bg-blue-100">-1</button>
+                <button type="button" data-adj="tablet:1" class="quick-adj-btn px-2.5 py-1 rounded bg-blue-600 font-bold text-white hover:bg-blue-500">+1</button>
+                <button type="button" data-adj="tablet:5" class="quick-adj-btn px-2.5 py-1 rounded bg-blue-100 font-bold text-blue-800 hover:bg-blue-200">+5</button>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between p-2 rounded-xl bg-emerald-50/60 border border-emerald-100">
+              <span class="font-bold text-emerald-900">캡슐 (1캡슐)</span>
+              <div class="flex items-center gap-1">
+                <button type="button" data-adj="capsule:-1" class="quick-adj-btn px-2.5 py-1 rounded bg-white border border-emerald-200 font-bold text-emerald-800 hover:bg-emerald-100">-1</button>
+                <button type="button" data-adj="capsule:1" class="quick-adj-btn px-2.5 py-1 rounded bg-emerald-600 font-bold text-white hover:bg-emerald-500">+1</button>
+                <button type="button" data-adj="capsule:5" class="quick-adj-btn px-2.5 py-1 rounded bg-emerald-100 font-bold text-emerald-800 hover:bg-emerald-200">+5</button>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between p-2 rounded-xl bg-amber-50/70 border border-amber-200">
+              <span class="font-bold text-amber-900">반알 (0.5정)</span>
+              <div class="flex items-center gap-1">
+                <button type="button" data-adj="half:-1" class="quick-adj-btn px-2.5 py-1 rounded bg-white border border-amber-300 font-bold text-amber-800 hover:bg-amber-100">-1조각</button>
+                <button type="button" data-adj="half:1" class="quick-adj-btn px-2.5 py-1 rounded bg-amber-500 font-bold text-white hover:bg-amber-400">+1조각</button>
+                <button type="button" data-adj="half:2" class="quick-adj-btn px-2.5 py-1 rounded bg-amber-100 font-bold text-amber-900 hover:bg-amber-200">+2(1정)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Save Current Count to Log Card -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-4 space-y-3">
+          <h3 class="text-sm font-bold text-slate-900">💾 조제 검수 기록 저장</h3>
+          <div class="space-y-2">
+            <input id="drugNameInput" type="text" placeholder="약품명 또는 환자번호 (예: 타이레놀정 500mg / 김OO)" class="w-full rounded-lg border border-slate-300 px-3 py-2 text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            <button id="saveRecordBtn" type="button" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition shadow-sm">
+              현재 계수 결과 기록장에 저장하기
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: LARGE TOUCH PAD & HALF-PILL SPLITTER -->
+    <section id="viewTap" class="hidden space-y-5">
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+          <div>
+            <h2 class="text-base font-bold text-slate-900">대형 터치패드 수동 계수 모드 (키보드 단축키 지원)</h2>
+            <p class="text-xs text-slate-500">조제대에서 약을 세면서 화면 카드를 터치하거나 키보드 숫자키(1: 정제, 2: 캡슐, 3: 반알, 4: 기타)를 누르세요.</p>
+          </div>
+          <button id="resetAllCountsBtn" type="button" class="px-3.5 py-1.5 rounded-lg bg-rose-50 border border-rose-200 text-rose-700 hover:bg-rose-100 text-xs font-bold transition">
+            전체 수량 0으로 초기화
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Tablet Pad -->
+          <div class="rounded-2xl border-2 border-blue-200 bg-blue-50/40 p-4 flex flex-col justify-between gap-4">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-800">단축키 [1]</span>
+              <span class="text-xs font-semibold text-slate-500">1개 = 1.0정</span>
+            </div>
+            <button type="button" data-adj="tablet:1" class="quick-adj-btn tap-card w-full py-6 rounded-xl bg-blue-600 hover:bg-blue-500 text-white shadow-md transition flex flex-col items-center justify-center gap-1">
+              <span class="text-sm font-semibold opacity-90">원형·장방형 정제</span>
+              <span id="padTabletCount" class="text-4xl font-extrabold">0</span>
+              <span class="text-xs opacity-80">터치하여 +1정 추가</span>
+            </button>
+            <div class="grid grid-cols-3 gap-1.5">
+              <button type="button" data-adj="tablet:-1" class="quick-adj-btn py-2 rounded-lg bg-white border border-blue-200 text-xs font-bold text-blue-900 hover:bg-blue-100">-1</button>
+              <button type="button" data-adj="tablet:5" class="quick-adj-btn py-2 rounded-lg bg-blue-100 text-xs font-bold text-blue-900 hover:bg-blue-200">+5</button>
+              <button type="button" data-adj="tablet:10" class="quick-adj-btn py-2 rounded-lg bg-blue-100 text-xs font-bold text-blue-900 hover:bg-blue-200">+10</button>
+            </div>
+          </div>
+
+          <!-- Capsule Pad -->
+          <div class="rounded-2xl border-2 border-emerald-200 bg-emerald-50/40 p-4 flex flex-col justify-between gap-4">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">단축키 [2]</span>
+              <span class="text-xs font-semibold text-slate-500">1개 = 1.0캡슐</span>
+            </div>
+            <button type="button" data-adj="capsule:1" class="quick-adj-btn tap-card w-full py-6 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white shadow-md transition flex flex-col items-center justify-center gap-1">
+              <span class="text-sm font-semibold opacity-90">경질·연질 캡슐</span>
+              <span id="padCapsuleCount" class="text-4xl font-extrabold">0</span>
+              <span class="text-xs opacity-80">터치하여 +1캡슐 추가</span>
+            </button>
+            <div class="grid grid-cols-3 gap-1.5">
+              <button type="button" data-adj="capsule:-1" class="quick-adj-btn py-2 rounded-lg bg-white border border-emerald-200 text-xs font-bold text-emerald-900 hover:bg-emerald-100">-1</button>
+              <button type="button" data-adj="capsule:5" class="quick-adj-btn py-2 rounded-lg bg-emerald-100 text-xs font-bold text-emerald-900 hover:bg-emerald-200">+5</button>
+              <button type="button" data-adj="capsule:10" class="quick-adj-btn py-2 rounded-lg bg-emerald-100 text-xs font-bold text-emerald-900 hover:bg-emerald-200">+10</button>
+            </div>
+          </div>
+
+          <!-- Half-Pill Pad -->
+          <div class="rounded-2xl border-2 border-amber-300 bg-amber-50/50 p-4 flex flex-col justify-between gap-4">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-200 text-amber-900">단축키 [3]</span>
+              <span class="text-xs font-semibold text-amber-800">1조각 = 0.5정</span>
+            </div>
+            <button type="button" data-adj="half:1" class="quick-adj-btn tap-card w-full py-6 rounded-xl bg-amber-500 hover:bg-amber-400 text-white shadow-md transition flex flex-col items-center justify-center gap-1">
+              <span class="text-sm font-semibold opacity-95">반알 (분할정 조각)</span>
+              <span id="padHalfCount" class="text-4xl font-extrabold">0</span>
+              <span id="padHalfSub" class="text-xs font-semibold opacity-95">환산 0.0정 · 터치 시 +1조각</span>
+            </button>
+            <div class="grid grid-cols-3 gap-1.5">
+              <button type="button" data-adj="half:-1" class="quick-adj-btn py-2 rounded-lg bg-white border border-amber-300 text-xs font-bold text-amber-900 hover:bg-amber-100">-1조각</button>
+              <button type="button" data-adj="half:2" class="quick-adj-btn py-2 rounded-lg bg-amber-100 text-xs font-bold text-amber-900 hover:bg-amber-200">+2(1정)</button>
+              <button type="button" data-adj="half:10" class="quick-adj-btn py-2 rounded-lg bg-amber-100 text-xs font-bold text-amber-900 hover:bg-amber-200">+10조각</button>
+            </div>
+          </div>
+
+          <!-- Other / Pack Pad -->
+          <div class="rounded-2xl border-2 border-purple-200 bg-purple-50/40 p-4 flex flex-col justify-between gap-4">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-purple-100 text-purple-800">단축키 [4]</span>
+              <span class="text-xs font-semibold text-slate-500">포·기타 제형</span>
+            </div>
+            <button type="button" data-adj="other:1" class="quick-adj-btn tap-card w-full py-6 rounded-xl bg-purple-600 hover:bg-purple-500 text-white shadow-md transition flex flex-col items-center justify-center gap-1">
+              <span class="text-sm font-semibold opacity-90">기타·특수 제형</span>
+              <span id="padOtherCount" class="text-4xl font-extrabold">0</span>
+              <span class="text-xs opacity-80">터치하여 +1개 추가</span>
+            </button>
+            <div class="grid grid-cols-3 gap-1.5">
+              <button type="button" data-adj="other:-1" class="quick-adj-btn py-2 rounded-lg bg-white border border-purple-200 text-xs font-bold text-purple-900 hover:bg-purple-100">-1</button>
+              <button type="button" data-adj="other:5" class="quick-adj-btn py-2 rounded-lg bg-purple-100 text-xs font-bold text-purple-900 hover:bg-purple-200">+5</button>
+              <button type="button" data-adj="other:10" class="quick-adj-btn py-2 rounded-lg bg-purple-100 text-xs font-bold text-purple-900 hover:bg-purple-200">+10</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: COUNTING LOG & CSV EXPORT -->
+    <section id="viewLog" class="hidden space-y-4">
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h2 class="text-base font-bold text-slate-900">📋 조제 계수 이력 및 CSV 내보내기</h2>
+            <p class="text-xs text-slate-500">저장된 검수 내역을 확인하고 엑셀(CSV) 파일로 다운로드하거나 클립보드에 복사할 수 있습니다.</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button id="copyLogBtn" type="button" class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-xs font-semibold text-slate-700 transition">
+              📋 텍스트 복사
+            </button>
+            <button id="exportCsvBtn" type="button" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-xs font-semibold text-white transition">
+              📥 CSV 다운로드
+            </button>
+            <button id="clearLogBtn" type="button" class="px-3 py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 text-xs font-semibold text-rose-700 border border-rose-200 transition">
+              전체 기록 삭제
+            </button>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead>
+              <tr class="border-b-2 border-slate-200 text-slate-600 bg-slate-50">
+                <th class="py-2.5 px-3">일시</th>
+                <th class="py-2.5 px-3">약품명 / 환자 메모</th>
+                <th class="py-2.5 px-3 text-right">정제</th>
+                <th class="py-2.5 px-3 text-right">캡슐</th>
+                <th class="py-2.5 px-3 text-right">반알(조각)</th>
+                <th class="py-2.5 px-3 text-right">기타</th>
+                <th class="py-2.5 px-3 text-right">총 낱알 수</th>
+                <th class="py-2.5 px-3 text-right">환산 총량</th>
+                <th class="py-2.5 px-3 text-center">관리</th>
+              </tr>
+            </thead>
+            <tbody id="logTableBody" class="divide-y divide-slate-100">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: GITHUB SOURCE CODE VIEWER & DOWNLOADER -->
+    <section id="viewCode" class="hidden space-y-4">
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-3">
+          <div>
+            <h2 class="text-base font-bold text-slate-900">💻 GitHub 업로드용 전체 소스코드 (<code>index.html</code>)</h2>
+            <p class="text-xs text-slate-500">아래 코드를 복사하거나 <code>index.html</code> 파일로 다운로드해 GitHub 저장소에 그대로 올리면 웹사이트가 즉시 작동합니다.</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <button id="copySourceCodeBtn" type="button" class="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition shadow-sm">
+              📋 index.html 전체 코드 복사
+            </button>
+            <button id="downloadIndexHtmlBtn" type="button" class="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition shadow-sm">
+              💾 index.html 파일로 다운로드
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 rounded-xl p-4 overflow-x-auto max-h-[520px] overflow-y-auto border border-slate-800">
+          <pre id="sourceCodeDisplay" class="code-area-selectable text-[11px] leading-relaxed font-mono text-emerald-300 whitespace-pre"></pre>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Toast Notification -->
+  <div id="toastBox" class="fixed bottom-5 right-5 z-50 hidden bg-slate-900 text-white px-4 py-2.5 rounded-xl shadow-lg text-xs font-semibold border border-slate-700"></div>
+
+  <!-- GitHub Pages Deployment Guide Modal -->
+  <div id="guideModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-5 shadow-xl space-y-4 border border-slate-200">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+        <h3 class="text-base font-bold text-slate-900">🌐 이 프로그램을 GitHub Pages에 올리는 방법</h3>
+        <button id="closeGuideBtn" type="button" class="text-slate-400 hover:text-slate-700 text-lg font-bold px-2">✕</button>
+      </div>
+      <ol class="list-decimal pl-5 space-y-2 text-xs text-slate-700 leading-relaxed">
+        <li>상단 <strong>💻 GitHub 업로드용 코드</strong> 탭에서 <strong><code>index.html 파일로 다운로드</code></strong>를 클릭하거나 전체 코드를 복사해 내 컴퓨터에 <code>index.html</code>로 저장합니다.</li>
+        <li>GitHub에서 새 Public 저장소(예: <code>pill-counter</code> 또는 <code>아이디.github.io</code>)를 생성합니다.</li>
+        <li>저장소 화면에서 <strong>Add file → Upload files</strong>를 눌러 <code>index.html</code>을 올리고 <strong>Commit changes</strong>를 클릭합니다 (또는 VS Code에서 Push).</li>
+        <li>저장소의 <strong>Settings → Pages</strong> 메뉴에서 Branch를 <code>main</code>으로 설정하고 <strong>Save</strong>를 누르면 1~2분 뒤 약국 스마트폰·태블릿·PC 어디서나 접속 가능한 웹 주소가 생성됩니다!</li>
+      </ol>
+      <div class="flex justify-end pt-2">
+        <button id="closeGuideFooterBtn" type="button" class="px-4 py-2 rounded-xl bg-slate-900 text-white text-xs font-bold hover:bg-slate-800">확인</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      // State
+      const state = {
+        activeTab: 'tray',
+        markerType: 'tablet',
+        markerRadius: 20,
+        showNumbers: true,
+        sensitivity: 3,
+        soundEnabled: true,
+        markers: [],
+        historyStack: [],
+        manualCounts: {
+          tablet: 0,
+          capsule: 0,
+          half: 0,
+          other: 0
+        },
+        useTrayCounts: true,
+        logs: []
+      };
+
+      // Type styles
+      const TYPE_META = {
+        tablet:  { label: '정제', color: '#2563eb', ring: '#93c5fd', dose: 1.0 },
+        capsule: { label: '캡슐', color: '#059669', ring: '#6ee7b7', dose: 1.0 },
+        half:    { label: '반알', color: '#d97706', ring: '#fde68a', dose: 0.5 },
+        other:   { label: '기타', color: '#7c3aed', ring: '#ddd6fe', dose: 1.0 }
+      };
+
+      // Audio feedback
+      let audioCtx = null;
+      function playBeep(freq, duration) {
+        if (!state.soundEnabled) return;
+        try {
+          if (!audioCtx) {
+            const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+            if (AudioContextClass) audioCtx = new AudioContextClass();
+          }
+          if (!audioCtx) return;
+          if (audioCtx.state === 'suspended') audioCtx.resume();
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'sine';
+          osc.frequency.value = freq || 660;
+          gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + (duration || 0.06));
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start();
+          osc.stop(audioCtx.currentTime + (duration || 0.06));
+        } catch (e) {
+          // Ignore audio restrictions
+        }
+      }
+
+      // Toast helper
+      let toastTimer = null;
+      function showToast(msg) {
+        const box = document.getElementById('toastBox');
+        box.textContent = msg;
+        box.classList.remove('hidden');
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(function() {
+          box.classList.add('hidden');
+        }, 2400);
+      }
+
+      // Background offscreen canvas holding current tray image (sample or uploaded)
+      const bgCanvas = document.createElement('canvas');
+      bgCanvas.width = 840;
+      bgCanvas.height = 520;
+      const bgCtx = bgCanvas.getContext('2d');
+
+      const trayCanvas = document.getElementById('trayCanvas');
+      const trayCtx = trayCanvas.getContext('2d');
+
+      // Generate realistic synthetic pharmacy tray with various pills
+      let samplePillsTruth = [];
+      function generateSampleTray() {
+        const w = bgCanvas.width;
+        const h = bgCanvas.height;
+
+        // Dark blue-slate pharmacy counting tray background
+        const grad = bgCtx.createLinearGradient(0, 0, w, h);
+        grad.addColorStop(0, '#0f172a');
+        grad.addColorStop(1, '#1e293b');
+        bgCtx.fillStyle = grad;
+        bgCtx.fillRect(0, 0, w, h);
+
+        // Subtle counting tray grid lines
+        bgCtx.strokeStyle = 'rgba(148, 163, 184, 0.12)';
+        bgCtx.lineWidth = 1;
+        for (let x = 60; x < w; x += 60) {
+          bgCtx.beginPath(); bgCtx.moveTo(x, 0); bgCtx.lineTo(x, h); bgCtx.stroke();
+        }
+        for (let y = 60; y < h; y += 60) {
+          bgCtx.beginPath(); bgCtx.moveTo(0, y); bgCtx.lineTo(w, y); bgCtx.stroke();
+        }
+
+        // Tray chute corner guide
+        bgCtx.strokeStyle = 'rgba(56, 189, 248, 0.25)';
+        bgCtx.lineWidth = 3;
+        bgCtx.strokeRect(24, 24, w - 48, h - 48);
+
+        // Place non-overlapping pills: 8 tablets, 5 capsules, 4 half-pills
+        const pills = [];
+        const specs = [
+          { type: 'tablet', count: 8 },
+          { type: 'capsule', count: 5 },
+          { type: 'half', count: 4 }
+        ];
+
+        specs.forEach(function(spec) {
+          for (let i = 0; i < spec.count; i++) {
+            for (let attempt = 0; attempt < 120; attempt++) {
+              const x = 95 + Math.random() * (w - 190);
+              const y = 85 + Math.random() * (h - 170);
+              const ok = pills.every(function(p) {
+                return Math.hypot(p.x - x, p.y - y) > 74;
+              });
+              if (ok) {
+                pills.push({ x: Math.round(x), y: Math.round(y), type: spec.type, angle: (Math.random() - 0.5) * 1.4 });
+                break;
+              }
+            }
+          }
+        });
+
+        // Draw each pill onto bgCtx
+        pills.forEach(function(p) {
+          bgCtx.save();
+          bgCtx.translate(p.x, p.y);
+          bgCtx.rotate(p.angle);
+
+          // Drop shadow
+          bgCtx.shadowColor = 'rgba(0,0,0,0.45)';
+          bgCtx.shadowBlur = 8;
+          bgCtx.shadowOffsetX = 2;
+          bgCtx.shadowOffsetY = 4;
+
+          if (p.type === 'tablet') {
+            bgCtx.fillStyle = '#f8fafc';
+            bgCtx.beginPath();
+            bgCtx.arc(0, 0, 22, 0, Math.PI * 2);
+            bgCtx.fill();
+            bgCtx.shadowColor = 'transparent';
+            bgCtx.strokeStyle = '#cbd5e1';
+            bgCtx.lineWidth = 2;
+            bgCtx.beginPath();
+            bgCtx.moveTo(-16, 0);
+            bgCtx.lineTo(16, 0);
+            bgCtx.stroke();
+          } else if (p.type === 'capsule') {
+            const cw = 52, r = 11;
+            bgCtx.fillStyle = '#10b981';
+            bgCtx.beginPath();
+            bgCtx.arc(-cw/2 + r, 0, r, Math.PI/2, Math.PI*1.5);
+            bgCtx.lineTo(0, -r);
+            bgCtx.lineTo(0, r);
+            bgCtx.closePath();
+            bgCtx.fill();
+            bgCtx.shadowColor = 'transparent';
+            bgCtx.fillStyle = '#fef3c7';
+            bgCtx.beginPath();
+            bgCtx.arc(cw/2 - r, 0, r, -Math.PI/2, Math.PI/2);
+            bgCtx.lineTo(0, r);
+            bgCtx.lineTo(0, -r);
+            bgCtx.closePath();
+            bgCtx.fill();
+          } else if (p.type === 'half') {
+            bgCtx.fillStyle = '#fde68a';
+            bgCtx.beginPath();
+            bgCtx.arc(0, 4, 21, Math.PI, 0, false);
+            bgCtx.closePath();
+            bgCtx.fill();
+            bgCtx.shadowColor = 'transparent';
+            bgCtx.strokeStyle = '#f59e0b';
+            bgCtx.lineWidth = 1.5;
+            bgCtx.stroke();
+          }
+          bgCtx.restore();
+        });
+
+        samplePillsTruth = pills;
+        state.historyStack = [];
+        state.markers = pills.map(function(p) {
+          return { x: p.x, y: p.y, type: p.type };
+        });
+        state.useTrayCounts = true;
+        renderCanvasAndSync();
+      }
+
+      // Client-side connected-component blob detection for uploaded photos or sample tray
+      function runAutoDetection() {
+        const w = bgCanvas.width;
+        const h = bgCanvas.height;
+        const imgData = bgCtx.getImageData(0, 0, w, h).data;
+
+        const step = 4;
+        const gw = Math.floor(w / step);
+        const gh = Math.floor(h / step);
+
+        let bgR = 0, bgG = 0, bgB = 0, samples = 0;
+        const cornerCoords = [[4,4],[w-5,4],[4,h-5],[w-5,h-5],[Math.floor(w/2),4]];
+        cornerCoords.forEach(function(c) {
+          const idx = (c[1] * w + c[0]) * 4;
+          bgR += imgData[idx]; bgG += imgData[idx+1]; bgB += imgData[idx+2];
+          samples++;
+        });
+        bgR /= samples; bgG /= samples; bgB /= samples;
+
+        const threshMap = { 1: 95, 2: 78, 3: 62, 4: 48, 5: 36 };
+        const diffThresh = threshMap[state.sensitivity] || 62;
+
+        const mask = new Uint8Array(gw * gh);
+        for (let gy = 3; gy < gh - 3; gy++) {
+          for (let gx = 3; gx < gw - 3; gx++) {
+            const px = gx * step;
+            const py = gy * step;
+            const idx = (py * w + px) * 4;
+            const r = imgData[idx], g = imgData[idx+1], b = imgData[idx+2];
+            const dist = Math.hypot(r - bgR, g - bgG, b - bgB);
+            if (dist > diffThresh) {
+              mask[gy * gw + gx] = 1;
+            }
+          }
+        }
+
+        const visited = new Uint8Array(gw * gh);
+        const detected = [];
+
+        for (let gy = 3; gy < gh - 3; gy++) {
+          for (let gx = 3; gx < gw - 3; gx++) {
+            const startIdx = gy * gw + gx;
+            if (!mask[startIdx] || visited[startIdx]) continue;
+
+            const queue = [startIdx];
+            visited[startIdx] = 1;
+            let sumX = 0, sumY = 0, count = 0;
+            let minX = gx, maxX = gx, minY = gy, maxY = gy;
+            let sumR = 0, sumG = 0, sumB = 0;
+
+            while (queue.length > 0) {
+              const curr = queue.pop();
+              const cy = Math.floor(curr / gw);
+              const cx = curr % gw;
+              sumX += cx; sumY += cy; count++;
+              if (cx < minX) minX = cx;
+              if (cx > maxX) maxX = cx;
+              if (cy < minY) minY = cy;
+              if (cy > maxY) maxY = cy;
+
+              const pIdx = ((cy * step) * w + (cx * step)) * 4;
+              sumR += imgData[pIdx]; sumG += imgData[pIdx+1]; sumB += imgData[pIdx+2];
+
+              const neighbors = [curr - 1, curr + 1, curr - gw, curr + gw];
+              for (let n = 0; n < neighbors.length; n++) {
+                const nb = neighbors[n];
+                if (nb >= 0 && nb < gw * gh && mask[nb] && !visited[nb]) {
+                  visited[nb] = 1;
+                  queue.push(nb);
+                }
+              }
+            }
+
+            if (count >= 14 && count <= 800) {
+              const bw = (maxX - minX + 1);
+              const bh = (maxY - minY + 1);
+              const aspect = Math.max(bw, bh) / Math.max(1, Math.min(bw, bh));
+              const avgR = sumR / count, avgG = sumG / count, avgB = sumB / count;
+
+              let pillType = 'tablet';
+              if (count < 48 || (avgR > 210 && avgG > 180 && avgB < 160 && count < 72)) {
+                pillType = 'half';
+              } else if (aspect > 1.42 || (avgG > avgR + 15)) {
+                pillType = 'capsule';
+              }
+
+              detected.push({
+                x: Math.round((sumX / count) * step),
+                y: Math.round((sumY / count) * step),
+                type: pillType
+              });
+            }
+          }
+        }
+
+        state.historyStack.push(JSON.stringify(state.markers));
+        state.markers = detected;
+        state.useTrayCounts = true;
+        renderCanvasAndSync();
+        playBeep(780, 0.08);
+        document.getElementById('trayStatusMsg').textContent = '자동 판독 완료: 총 ' + detected.length + '개의 알약 조각을 찾았습니다.';
+        showToast('✨ 자동 알약 인식 완료 (' + detected.length + '개 감지)');
+      }
+
+      // Render canvas and sync counts
+      function renderCanvasAndSync() {
+        trayCtx.clearRect(0, 0, trayCanvas.width, trayCanvas.height);
+        trayCtx.drawImage(bgCanvas, 0, 0);
+
+        const r = state.markerRadius;
+        state.markers.forEach(function(m, idx) {
+          const meta = TYPE_META[m.type] || TYPE_META.tablet;
+          trayCtx.save();
+          trayCtx.beginPath();
+          trayCtx.arc(m.x, m.y, r, 0, Math.PI * 2);
+          trayCtx.fillStyle = meta.color + 'cc';
+          trayCtx.fill();
+          trayCtx.lineWidth = 2.5;
+          trayCtx.strokeStyle = meta.ring;
+          trayCtx.stroke();
+
+          if (state.showNumbers) {
+            trayCtx.fillStyle = '#ffffff';
+            trayCtx.font = 'bold ' + Math.max(10, Math.round(r * 0.65)) + 'px Inter, sans-serif';
+            trayCtx.textAlign = 'center';
+            trayCtx.textBaseline = 'middle';
+            const labelText = m.type === 'half' ? (idx + 1) + '½' : String(idx + 1);
+            trayCtx.fillText(labelText, m.x, m.y);
+          }
+          trayCtx.restore();
+        });
+
+        if (state.useTrayCounts) {
+          const counts = { tablet: 0, capsule: 0, half: 0, other: 0 };
+          state.markers.forEach(function(m) {
+            counts[m.type] = (counts[m.type] || 0) + 1;
+          });
+          state.manualCounts = counts;
+        }
+
+        updateScoreboardAndRx();
+      }
+
+      function updateScoreboardAndRx() {
+        const c = state.manualCounts;
+        const halfDose = c.half * 0.5;
+        const totalPieces = c.tablet + c.capsule + c.half + c.other;
+        const totalDose = c.tablet + c.capsule + halfDose + c.other;
+
+        document.getElementById('sumTablet').textContent = c.tablet;
+        document.getElementById('sumCapsule').textContent = c.capsule;
+        document.getElementById('sumHalf').textContent = c.half;
+        document.getElementById('sumHalfDose').textContent = halfDose.toFixed(1);
+        document.getElementById('sumOther').textContent = c.other;
+        document.getElementById('sumTotalPieces').textContent = totalPieces;
+        document.getElementById('sumTotalDose').textContent = Number.isInteger(totalDose) ? String(totalDose) : totalDose.toFixed(1);
+
+        document.getElementById('padTabletCount').textContent = c.tablet;
+        document.getElementById('padCapsuleCount').textContent = c.capsule;
+        document.getElementById('padHalfCount').textContent = c.half;
+        document.getElementById('padHalfSub').textContent = '환산 ' + halfDose.toFixed(1) + '정 · 터치 시 +1조각';
+        document.getElementById('padOtherCount').textContent = c.other;
+
+        const singleDose = parseFloat(document.getElementById('rxSingleDose').value) || 1;
+        const freq = parseInt(document.getElementById('rxFreqPerDay').value, 10) || 1;
+        const days = parseInt(document.getElementById('rxDays').value, 10) || 1;
+
+        const totalPacks = freq * days;
+        const targetDose = singleDose * totalPacks;
+        const hasHalf = (singleDose % 1) !== 0;
+
+        document.getElementById('rxTargetDoseText').textContent =
+          (Number.isInteger(targetDose) ? targetDose : targetDose.toFixed(1)) + ' 정 (' + totalPacks + '포)';
+
+        if (hasHalf) {
+          const halfPiecesNeeded = totalPacks;
+          const wholePillsToSplit = Math.ceil(halfPiecesNeeded / 2);
+          const wholePartPerDose = Math.floor(singleDose);
+          const intactPills = wholePartPerDose * totalPacks;
+          document.getElementById('rxSplitGuideText').textContent =
+            '온전한 약 ' + intactPills + '정 + 반알 ' + halfPiecesNeeded + '조각 (온전한 약 ' + wholePillsToSplit + '정 분할)';
+        } else {
+          document.getElementById('rxSplitGuideText').textContent =
+            '반알 분할 불필요 (온전한 약 ' + targetDose + '정·캡슐)';
+        }
+
+        const diff = totalDose - targetDose;
+        const diffEl = document.getElementById('rxDiffText');
+        const badgeEl = document.getElementById('matchStatusBadge');
+
+        if (Math.abs(diff) < 0.001 && targetDose > 0) {
+          diffEl.textContent = '정확히 일치합니다 (0 차이)';
+          diffEl.className = 'font-extrabold text-emerald-600';
+          badgeEl.textContent = '✓ 처방 수량 일치';
+          badgeEl.className = 'px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800';
+        } else if (diff < 0) {
+          const lack = Math.abs(diff);
+          diffEl.textContent = (Number.isInteger(lack) ? lack : lack.toFixed(1)) + ' 정 부족';
+          diffEl.className = 'font-extrabold text-amber-600';
+          badgeEl.textContent = '조제 수량 부족';
+          badgeEl.className = 'px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800';
+        } else {
+          diffEl.textContent = '+' + (Number.isInteger(diff) ? diff : diff.toFixed(1)) + ' 정 초과';
+          diffEl.className = 'font-extrabold text-rose-600';
+          badgeEl.textContent = '⚠ 수량 초과 주의';
+          badgeEl.className = 'px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-100 text-rose-800';
+        }
+
+        const pct = targetDose > 0 ? Math.min(100, Math.round((totalDose / targetDose) * 100)) : 0;
+        const bar = document.getElementById('rxProgressBar');
+        bar.style.width = pct + '%';
+        bar.className = (diff > 0.001)
+          ? 'bg-rose-500 h-full transition-all duration-300'
+          : (Math.abs(diff) < 0.001 ? 'bg-emerald-500 h-full transition-all duration-300' : 'bg-blue-500 h-full transition-all duration-300');
+      }
+
+      // Canvas click: add or remove marker
+      trayCanvas.addEventListener('pointerdown', function(evt) {
+        const rect = trayCanvas.getBoundingClientRect();
+        const scaleX = trayCanvas.width / rect.width;
+        const scaleY = trayCanvas.height / rect.height;
+        const x = Math.round((evt.clientX - rect.left) * scaleX);
+        const y = Math.round((evt.clientY - rect.top) * scaleY);
+
+        state.historyStack.push(JSON.stringify(state.markers));
+        state.useTrayCounts = true;
+
+        const hitRadius = state.markerRadius + 4;
+        let hitIdx = -1;
+        for (let i = state.markers.length - 1; i >= 0; i--) {
+          const m = state.markers[i];
+          if (Math.hypot(m.x - x, m.y - y) <= hitRadius) {
+            hitIdx = i;
+            break;
+          }
+        }
+
+        if (hitIdx !== -1) {
+          state.markers.splice(hitIdx, 1);
+          playBeep(420, 0.05);
+          document.getElementById('trayStatusMsg').textContent = '선택한 마커를 삭제했습니다.';
+        } else {
+          state.markers.push({ x: x, y: y, type: state.markerType });
+          playBeep(700, 0.05);
+          document.getElementById('trayStatusMsg').textContent = TYPE_META[state.markerType].label + ' 마커를 추가했습니다.';
+        }
+
+        renderCanvasAndSync();
+      });
+
+      // Marker type selector buttons
+      document.querySelectorAll('.marker-type-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          state.markerType = btn.getAttribute('data-type');
+          document.querySelectorAll('.marker-type-btn').forEach(function(b) {
+            b.className = 'marker-type-btn px-3 py-1.5 rounded-lg text-xs font-bold transition bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 flex items-center gap-1.5';
+          });
+          btn.className = 'marker-type-btn px-3 py-1.5 rounded-lg text-xs font-bold transition bg-slate-900 text-white shadow-sm flex items-center gap-1.5';
+        });
+      });
+
+      // Quick adjustment buttons
+      function adjustCount(type, delta) {
+        if (state.useTrayCounts) {
+          state.historyStack.push(JSON.stringify(state.markers));
+          if (delta > 0) {
+            for (let i = 0; i < delta; i++) {
+              state.markers.push({
+                x: Math.round(60 + Math.random() * (trayCanvas.width - 120)),
+                y: Math.round(60 + Math.random() * (trayCanvas.height - 120)),
+                type: type
+              });
+            }
+          } else {
+            let toRemove = Math.abs(delta);
+            for (let i = state.markers.length - 1; i >= 0 && toRemove > 0; i--) {
+              if (state.markers[i].type === type) {
+                state.markers.splice(i, 1);
+                toRemove--;
+              }
+            }
+          }
+          renderCanvasAndSync();
+        } else {
+          state.manualCounts[type] = Math.max(0, (state.manualCounts[type] || 0) + delta);
+          updateScoreboardAndRx();
+        }
+        playBeep(delta > 0 ? 720 : 440, 0.05);
+      }
+
+      document.querySelectorAll('.quick-adj-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          const parts = btn.getAttribute('data-adj').split(':');
+          adjustCount(parts[0], parseInt(parts[1], 10));
+        });
+      });
+
+      // Keyboard shortcuts
+      window.addEventListener('keydown', function(evt) {
+        const tag = (evt.target && evt.target.tagName) ? evt.target.tagName.toLowerCase() : '';
+        if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
+        if (evt.key === '1') adjustCount('tablet', 1);
+        else if (evt.key === '2') adjustCount('capsule', 1);
+        else if (evt.key === '3') adjustCount('half', 1);
+        else if (evt.key === '4') adjustCount('other', 1);
+      });
+
+      // Image upload handler
+      document.getElementById('imageUploadInput').addEventListener('change', function(evt) {
+        const file = evt.target.files && evt.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const img = new Image();
+          img.onload = function() {
+            bgCtx.fillStyle = '#0f172a';
+            bgCtx.fillRect(0, 0, bgCanvas.width, bgCanvas.height);
+            const scale = Math.min(bgCanvas.width / img.width, bgCanvas.height / img.height);
+            const dw = img.width * scale;
+            const dh = img.height * scale;
+            const dx = (bgCanvas.width - dw) / 2;
+            const dy = (bgCanvas.height - dh) / 2;
+            bgCtx.drawImage(img, dx, dy, dw, dh);
+            state.markers = [];
+            runAutoDetection();
+          };
+          img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      });
+
+      // Buttons
+      document.getElementById('loadSampleBtn').addEventListener('click', function() {
+        generateSampleTray();
+        playBeep(640, 0.06);
+        showToast('🧪 새 샘플 약국 트레이를 생성했습니다.');
+      });
+
+      document.getElementById('autoDetectBtn').addEventListener('click', function() {
+        runAutoDetection();
+      });
+
+      document.getElementById('undoMarkerBtn').addEventListener('click', function() {
+        if (state.historyStack.length === 0) {
+          showToast('되돌릴 이전 작업이 없습니다.');
+          return;
+        }
+        state.markers = JSON.parse(state.historyStack.pop());
+        renderCanvasAndSync();
+        playBeep(500, 0.05);
+      });
+
+      document.getElementById('clearMarkersBtn').addEventListener('click', function() {
+        state.historyStack.push(JSON.stringify(state.markers));
+        state.markers = [];
+        state.manualCounts = { tablet: 0, capsule: 0, half: 0, other: 0 };
+        renderCanvasAndSync();
+        showToast('마커와 계수 수량을 모두 초기화했습니다.');
+      });
+
+      document.getElementById('resetAllCountsBtn').addEventListener('click', function() {
+        state.markers = [];
+        state.manualCounts = { tablet: 0, capsule: 0, half: 0, other: 0 };
+        renderCanvasAndSync();
+        showToast('전체 수량을 0으로 초기화했습니다.');
+      });
+
+      // Sliders & checkboxes
+      document.getElementById('markerSizeRange').addEventListener('input', function(evt) {
+        state.markerRadius = parseInt(evt.target.value, 10) || 20;
+        renderCanvasAndSync();
+      });
+
+      document.getElementById('showNumbersCheck').addEventListener('change', function(evt) {
+        state.showNumbers = evt.target.checked;
+        renderCanvasAndSync();
+      });
+
+      document.getElementById('sensitivityRange').addEventListener('input', function(evt) {
+        state.sensitivity = parseInt(evt.target.value, 10) || 3;
+        runAutoDetection();
+      });
+
+      ['rxSingleDose', 'rxFreqPerDay', 'rxDays'].forEach(function(id) {
+        document.getElementById(id).addEventListener('input', updateScoreboardAndRx);
+        document.getElementById(id).addEventListener('change', updateScoreboardAndRx);
+      });
+
+      // Sound toggle
+      document.getElementById('soundToggleBtn').addEventListener('click', function() {
+        state.soundEnabled = !state.soundEnabled;
+        document.getElementById('soundIcon').textContent = state.soundEnabled ? '🔊' : '🔇';
+        document.getElementById('soundLabel').textContent = state.soundEnabled ? '효과음 켜짐' : '음소거됨';
+      });
+
+      // Guide Modal
+      const guideModal = document.getElementById('guideModal');
+      document.getElementById('openGuideBtn').addEventListener('click', function() {
+        guideModal.classList.remove('hidden');
+      });
+      document.getElementById('closeGuideBtn').addEventListener('click', function() {
+        guideModal.classList.add('hidden');
+      });
+      document.getElementById('closeGuideFooterBtn').addEventListener('click', function() {
+        guideModal.classList.add('hidden');
+      });
+
+      // Source Code Viewer & Downloader
+      function getCleanSourceHtml() {
+        return '<!DOCTYPE html>\n<html lang="ko">\n' + document.documentElement.innerHTML + '\n</html>';
+      }
+
+      document.getElementById('copySourceCodeBtn').addEventListener('click', function() {
+        const code = document.getElementById('sourceCodeDisplay').textContent || getCleanSourceHtml();
+        const ta = document.createElement('textarea');
+        ta.value = code;
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          document.execCommand('copy');
+          showToast('📋 index.html 전체 코드가 클립보드에 복사되었습니다!');
+        } catch (e) {
+          showToast('복사에 실패했습니다.');
+        }
+        document.body.removeChild(ta);
+      });
+
+      document.getElementById('downloadIndexHtmlBtn').addEventListener('click', function() {
+        const code = document.getElementById('sourceCodeDisplay').textContent || getCleanSourceHtml();
+        const blob = new Blob([code], { type: 'text/html;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'index.html';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showToast('💾 GitHub 업로드용 index.html 파일을 다운로드했습니다.');
+      });
+
+      // Tabs
+      function switchTab(tab) {
+        state.activeTab = tab;
+        const views = {
+          tray: document.getElementById('viewTray'),
+          tap: document.getElementById('viewTap'),
+          log: document.getElementById('viewLog'),
+          code: document.getElementById('viewCode')
+        };
+        const btns = {
+          tray: document.getElementById('tabBtnTray'),
+          tap: document.getElementById('tabBtnTap'),
+          log: document.getElementById('tabBtnLog'),
+          code: document.getElementById('tabBtnCode')
+        };
+        Object.keys(views).forEach(function(k) {
+          if (k === tab) {
+            views[k].classList.remove('hidden');
+            btns[k].className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition bg-emerald-500 text-white shadow flex items-center gap-1.5';
+          } else {
+            views[k].classList.add('hidden');
+            btns[k].className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition text-slate-300 hover:text-white flex items-center gap-1.5';
+          }
+        });
+      }
+
+      document.getElementById('tabBtnTray').addEventListener('click', function() { switchTab('tray'); });
+      document.getElementById('tabBtnTap').addEventListener('click', function() { switchTab('tap'); });
+      document.getElementById('tabBtnLog').addEventListener('click', function() { switchTab('log'); });
+      document.getElementById('tabBtnCode').addEventListener('click', function() { switchTab('code'); });
+
+      // Logging & Persistence
+      function loadLogs() {
+        try {
+          const saved = localStorage.getItem('pharmcount_logs_v1');
+          if (saved) state.logs = JSON.parse(saved);
+        } catch (e) {
+          state.logs = [];
+        }
+        if (!state.logs || state.logs.length === 0) {
+          state.logs = [
+            {
+              id: 'sample-1',
+              time: '2026-10-18 18:15',
+              memo: '아목시실린캡슐 500mg + 타이레놀정 분할 조제 (샘플)',
+              tablet: 8,
+              capsule: 5,
+              half: 4,
+              other: 0,
+              pieces: 17,
+              dose: 15.0
+            }
+          ];
+        }
+        renderLogs();
+      }
+
+      function saveLogs() {
+        try {
+          localStorage.setItem('pharmcount_logs_v1', JSON.stringify(state.logs));
+        } catch (e) {}
+      }
+
+      function renderLogs() {
+        const tbody = document.getElementById('logTableBody');
+        document.getElementById('logBadge').textContent = String(state.logs.length);
+        tbody.innerHTML = '';
+
+        if (state.logs.length === 0) {
+          const tr = document.createElement('tr');
+          tr.innerHTML = '<td colspan="9" class="py-8 text-center text-slate-400">저장된 조제 계수 기록이 없습니다.</td>';
+          tbody.appendChild(tr);
+          return;
+        }
+
+        state.logs.forEach(function(item) {
+          const tr = document.createElement('tr');
+          tr.className = 'hover:bg-slate-50';
+          tr.innerHTML =
+            '<td class="py-2.5 px-3 text-slate-500 whitespace-nowrap">' + item.time + '</td>' +
+            '<td class="py-2.5 px-3 font-semibold text-slate-900">' + item.memo + '</td>' +
+            '<td class="py-2.5 px-3 text-right font-medium text-blue-700">' + item.tablet + '정</td>' +
+            '<td class="py-2.5 px-3 text-right font-medium text-emerald-700">' + item.capsule + '캡슐</td>' +
+            '<td class="py-2.5 px-3 text-right font-medium text-amber-700">' + item.half + '조각 (' + (item.half * 0.5).toFixed(1) + '정)</td>' +
+            '<td class="py-2.5 px-3 text-right text-purple-700">' + item.other + '</td>' +
+            '<td class="py-2.5 px-3 text-right font-bold text-slate-800">' + item.pieces + '개</td>' +
+            '<td class="py-2.5 px-3 text-right font-extrabold text-emerald-700">' + item.dose + '</td>' +
+            '<td class="py-2.5 px-3 text-center"><button type="button" data-del="' + item.id + '" class="del-log-btn text-rose-600 hover:underline font-semibold">삭제</button></td>';
+          tbody.appendChild(tr);
+        });
+
+        tbody.querySelectorAll('.del-log-btn').forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            const id = btn.getAttribute('data-del');
+            state.logs = state.logs.filter(function(x) { return x.id !== id; });
+            saveLogs();
+            renderLogs();
+            showToast('선택한 기록을 삭제했습니다.');
+          });
+        });
+      }
+
+      document.getElementById('saveRecordBtn').addEventListener('click', function() {
+        const c = state.manualCounts;
+        const pieces = c.tablet + c.capsule + c.half + c.other;
+        const dose = c.tablet + c.capsule + (c.half * 0.5) + c.other;
+        if (pieces === 0) {
+          showToast('계수된 알약이 없습니다. 먼저 알약을 카운트해 주세요.');
+          return;
+        }
+        const memoInput = document.getElementById('drugNameInput');
+        const memo = (memoInput.value || '').trim() || '일반 처방 조제 검수';
+        const now = new Date();
+        const pad = function(n) { return String(n).padStart(2, '0'); };
+        const timeStr = now.getFullYear() + '-' + pad(now.getMonth() + 1) + '-' + pad(now.getDate()) + ' ' + pad(now.getHours()) + ':' + pad(now.getMinutes());
+
+        state.logs.unshift({
+          id: 'log-' + Date.now(),
+          time: timeStr,
+          memo: memo,
+          tablet: c.tablet,
+          capsule: c.capsule,
+          half: c.half,
+          other: c.other,
+          pieces: pieces,
+          dose: Number.isInteger(dose) ? dose : Number(dose.toFixed(1))
+        });
+        memoInput.value = '';
+        saveLogs();
+        renderLogs();
+        playBeep(880, 0.08);
+        showToast('💾 조제 계수 기록이 저장되었습니다.');
+      });
+
+      document.getElementById('copyLogBtn').addEventListener('click', function() {
+        const lines = ['일시\t약품명/메모\t정제\t캡슐\t반알(조각)\t기타\t총낱알수\t환산총량'];
+        state.logs.forEach(function(r) {
+          lines.push([r.time, r.memo, r.tablet, r.capsule, r.half, r.other, r.pieces, r.dose].join('\t'));
+        });
+        const text = lines.join('\n');
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          document.execCommand('copy');
+          showToast('📋 계수 기록이 클립보드에 복사되었습니다.');
+        } catch (e) {
+          showToast('복사에 실패했습니다.');
+        }
+        document.body.removeChild(ta);
+      });
+
+      document.getElementById('exportCsvBtn').addEventListener('click', function() {
+        const rows = [['일시', '약품명_메모', '정제(1정)', '캡슐(1캡슐)', '반알(0.5정_조각수)', '기타', '총낱알수', '처방환산총량']];
+        state.logs.forEach(function(r) {
+          rows.push([r.time, '"' + String(r.memo).replace(/"/g, '""') + '"', r.tablet, r.capsule, r.half, r.other, r.pieces, r.dose]);
+        });
+        const csv = '\uFEFF' + rows.map(function(r) { return r.join(','); }).join('\n');
+        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'pharmacy_pill_count_log.csv';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showToast('📥 CSV 파일 다운로드를 시작했습니다.');
+      });
+
+      document.getElementById('clearLogBtn').addEventListener('click', function() {
+        state.logs = [];
+        saveLogs();
+        renderLogs();
+        showToast('전체 계수 기록을 삭제했습니다.');
+      });
+
+      // Initialize app on load
+      window.addEventListener('load', function() {
+        const rawHtml = getCleanSourceHtml();
+        loadLogs();
+        generateSampleTray();
+        document.getElementById('sourceCodeDisplay').textContent = rawHtml;
+        switchTab('code');
+      });
+    })();
+  </script>
+
+</body>
+  </html>
